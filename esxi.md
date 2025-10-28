@@ -136,3 +136,23 @@ esxcli network ip route ipv4 list
 ```bash
 esxcli network nic list
 ```
+
+### VSAN 関連
+
+- クラスター状態確認
+
+```
+esxcli vsan cluster get
+```
+
+- クラスターから解除
+
+```
+esxcli vsan cluster leave
+```
+
+- クラスターへ追加
+
+```
+esxcli vsan cluster join -u <UUID>
+```
